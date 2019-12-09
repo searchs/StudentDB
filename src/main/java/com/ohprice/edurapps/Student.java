@@ -10,6 +10,71 @@ public class Student {
     private String lastName;
     private int gradeYear;
     private String studentID;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getGradeYear() {
+        return gradeYear;
+    }
+
+    public void setGradeYear(int gradeYear) {
+        this.gradeYear = gradeYear;
+    }
+
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
+    }
+
+    public String getCourses() {
+        return courses;
+    }
+
+    public void setCourses(String courses) {
+        this.courses = courses;
+    }
+
+    public int getTuitionBalance() {
+        return tuitionBalance;
+    }
+
+    public void setTuitionBalance(int tuitionBalance) {
+        this.tuitionBalance = tuitionBalance;
+    }
+
+    public static int getCostOfCourse() {
+        return costOfCourse;
+    }
+
+    public static void setCostOfCourse(int costOfCourse) {
+        Student.costOfCourse = costOfCourse;
+    }
+
+    public static int getId() {
+        return id;
+    }
+
+    public static void setId(int id) {
+        Student.id = id;
+    }
+
     private String courses;
     private int tuitionBalance = 0;
     private static int costOfCourse = 600;
@@ -49,6 +114,7 @@ public class Student {
         }
 
         System.out.println("Enrolled in Courses: " + courses);
+        System.out.println("Tuition Balance: " + tuitionBalance);
 
     }
 
